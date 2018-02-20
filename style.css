@@ -1,0 +1,26 @@
+/*
+Theme Name: Lawyers Attorneys Child
+Author: Vamtam
+Author URI: http://vamtam.com
+Template: lawyers-attorneys
+*/
+
+
+/*
+Woocommerce Shortcode styling
+[add_to_cart]
+*/
+.addToCart {
+	  font-weight: bold;
+	  text-align: center;
+}
+.woocommerce-Price-amount:before {
+  	content: "Precio: ";
+}
+.woocommerce-Price-currencySymbol:after {
+    font-weight: normal;
+	  content: " (IVA y tasas incluidas) ";
+}
+/* .addToCart a:after { */
+/*   	content: "  "; */
+/* } */
