@@ -39,24 +39,132 @@ add_action('woocommerce_order_status_completed', 'create_wp_customer_area_projec
 
 function create_wp_customer_area_project( $order_id ) {
   $order = wc_get_order( $order_id );
+
+  $project_id = add_project( $order );
+  add_tasks( $order, $project_id );
+  add_invoice( $order, $project_id );
+}
+
+function add_tasks( $order, $project_id ) {
   $user = $order->get_user();
   if ( $user ) {
+    $items = $order->get_items();
+
+    // create task post
+    $new_tasklist = array(
+        'post_author' => 1,
+        'post_title' => $user->user_email . " : servicios",
+        'post_content' => '',
+        'post_type' => 'cuar_tasklist',
+        'post_status' => 'publish'
+                          );
+    $tasklist_result = wp_insert_post($new_tasklist, true);
+
+    if ( is_wp_error($tasklist_result) ) {
+      var_dump_pre($tasklist_result->get_error_message());
+    } else {
+      $tasklist_id = $tasklist_result;
+      // insert tasklist postmeta
+      $owner_queryable = "|prj_" . $project_id . "|";
+      add_post_meta( $tasklist_id, 'cuar_owner_queryable', $owner_queryable );
+
+      $task_count = 0;
+      $items = $order->get_items();
+      foreach( $items as $key => $item ) {
+        $product = $item->get_product();
+        $product_name = $product->get_name();
+
+        $new_task = array(
+            'post_author' => 1,
+            'post_title' => $product_name,
+            'post_content' => $product_name,
+            'post_type' => 'cuar_task',
+            'post_status' => 'publish',
+            'post_parent' => $tasklist_id
+                          );
+        $task_result = wp_insert_post($new_task, true);
+        $task_count++;
+      }
+
+      // add task count to tasklist
+      add_post_meta ( $tasklist_id, 'cuar_list_total_tasks', $task_count );
+    }
+  }
+}
+
+function add_invoice( $order, $project_id ) {
+  $user = $order->get_user();
+  $invoice_items = [];
+
+  $items = $order->get_items();
+  foreach( $items as $key => $item ) {
+    $invoice_item = [
+        "title" => "Item 1",
+        "description" => "",
+        "unit_price" => 10,
+        "unit" => "",
+        "quantity" => 1
+                     ];
+
+    array_push($invoice_items, $invoice_item );
+  }
+
+  $new_invoice = array(
+      'post_author' => 1,
+      'post_title' => $user->user_email . "-" . date('d.m.Y'),
+      'post_content' => '',
+      'post_type' => 'cuar_invoice',
+      'post_status' => 'publish'
+                       );
+  // Return: (int|WP_Error) The post ID on success. The value 0 or WP_Error on failure.
+  $invoice_result = wp_insert_post($new_invoice, true);
+
+  $invoice_id = $invoice_result;
+  // mark invoice as paid
+  $invoice_term_result = wp_set_post_terms( $invoice_id, "Paid", "cuar_invoice_status");
+
+  // insert postmetas
+  $owner_queryable = "|prj_" . $project_id . "|";
+  add_post_meta( $invoice_id, 'cuar_owner_queryable', $owner_queryable );
+  add_post_meta( $invoice_id, 'cuar_items', $invoice_items );
+  $billing_address = [
+      "name" => "name",
+      "company" => "company",
+      "vat_number" => "nif",
+      "logo_url" => "",
+      "line1" => "street 1",
+      "line 2" => "street 2",
+      "zip" => "postal",
+      "city" => "City",
+      "country" => "ES",
+      "state" => "B"
+                      ];
+  add_post_meta( $invoice_id, 'cuar_billing_address', $billing_address );
+}
+
+function add_project( $order ) {
+  $user = $order->get_user();
+  if ( $user ) {
+    // get item titles of order
+    $items = $order->get_items();
+
     // insert project into wp_posts
     // docs: https://developer.wordpress.org/reference/functions/wp_insert_post/
+    $project_title = $user->user_email . "-" . date('d.m.Y');
     $new_project = array(
-        'post_author' => 9,
-        'post_content' => 'test',
-        'post_title' => 'test',
+        'post_author' => 1,
+        'post_title' => $project_title,
+        'post_content' => '',
         'post_type' => 'cuar_project',
         'post_status' => 'publish'
                          );
     // Return: (int|WP_Error) The post ID on success. The value 0 or WP_Error on failure.
-    $result = wp_insert_post($new_project, true);
+    $project_result = wp_insert_post($new_project, true);
     // chk for error and log
-    if ( is_wp_error($result) ) {
-      var_dump_pre($result->get_error_message());
+    if ( is_wp_error($project_result) ) {
+      var_dump_pre($project_result->get_error_message());
     } else {
-      $post_id = $result;
+      $post_id = $project_result;
 
       // project status: open
       // set post terms
@@ -79,9 +187,10 @@ function create_wp_customer_area_project( $order_id ) {
         var_dump_pre($postmeta_result->get_error_message());
       }
     }
-    error_log($user->ID);
-  }
 
+    $project_id = $post_id;
+    return $project_id;
+  }
 }
 
 
@@ -95,12 +204,13 @@ function var_dump_pre($mixed = null) {
   echo '</pre>';
 
   // output in error_log
-  ob_start();
-  var_dump($mixed);
-  error_log(ob_get_clean());
+  // ob_start();
+  // var_dump($mixed);
+  // error_log(ob_get_clean());
 
   return null;
 }
+
 
 // FIX WPCustomerArea Bug:
 // Bootstrap json is loaded twice (once from VamTam theme and once from WPCustomerArea)
