@@ -1,5 +1,8 @@
 <?php
 
+require_once(CUAR_INCLUDES_DIR . '/core-addons/post-owner/post-owner-addon.class.php');
+
+
 function my_theme_enqueue_styles() {
   $parent_style = 'lawyers-attorneys-style';
 
@@ -33,8 +36,46 @@ function add_order_email_instructions( $order ) {
 add_action('woocommerce_email_before_order_table', 'add_order_email_instructions', 10, 1);
 
 
+////////////////////////////////////////////////////////////////////////////////
+// CLIENT PRIVATE FILE UPLOAD
+// set default owner to the client & every administrator
+// after CUAR saves the owner postmeta, add yourself as owner and call the CUAR
+// owner class save to update the postmeta
+////////////////////////////////////////////////////////////////////////////////
+add_action( 'cuar/core/ownership/after-save-owner', 'set_default_owner', 10, 4);
+function set_default_owner( $post_id, $post, $previous_owners, $new_owners ) {
+    $current_user_id = get_current_user_id();
+
+    // if creator is not owner add as owner
+    $is_current_user_owner = false;
+
+    foreach ( $new_owners['usr'] as $valor ) {
+        error_log($valor);
+        if ($valor == $current_user_id) {
+            error_log("is already owner");
+            $is_current_user_owner = true;
+        }
+    }
+
+    if (!$is_current_user_owner) {
+        error_log("start");
+        error_log(print_r($new_owners, true));
+        if ($new_owners['usr'] ) {
+            array_push($new_owners['usr'], $current_user_id);
+        } else {
+            $new_owners["usr"] = [$current_user_id];
+        }
+
+        $owner_class = new CUAR_PostOwnerAddOn();
+        $owner_class->save_post_owners($post_id, $new_owners);
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
 // Save Project in WPCustomerArea after a product has been sold
 // action: woocommerce_order_status_completed ( maybe woocommerce_payment_complete)
+////////////////////////////////////////////////////////////////////////////////
 add_action('woocommerce_order_status_completed', 'create_wp_customer_area_project' );
 
 function create_wp_customer_area_project( $order_id ) {
@@ -210,6 +251,7 @@ function var_dump_pre($mixed = null) {
 
   return null;
 }
+
 
 
 // FIX WPCustomerArea Bug:

@@ -21,6 +21,12 @@ Woocommerce Shortcode styling
     font-weight: normal;
 	  content: " (IVA y tasas incluidas) ";
 }
-/* .addToCart a:after { */
-/*   	content: "  "; */
-/* } */
+
+
+/*
+  FIX Bootstrap fllickering of Dropdown menu
+*/
+body.customer-area-active .cuar-css-wrapper .animated {
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+}
