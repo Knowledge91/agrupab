@@ -50,16 +50,12 @@ function set_default_owner( $post_id, $post, $previous_owners, $new_owners ) {
     $is_current_user_owner = false;
 
     foreach ( $new_owners['usr'] as $valor ) {
-        error_log($valor);
         if ($valor == $current_user_id) {
-            error_log("is already owner");
             $is_current_user_owner = true;
         }
     }
 
     if (!$is_current_user_owner) {
-        error_log("start");
-        error_log(print_r($new_owners, true));
         if ($new_owners['usr'] ) {
             array_push($new_owners['usr'], $current_user_id);
         } else {
@@ -77,12 +73,13 @@ function set_default_owner( $post_id, $post, $previous_owners, $new_owners ) {
 // action: woocommerce_order_status_completed ( maybe woocommerce_payment_complete)
 ////////////////////////////////////////////////////////////////////////////////
 add_action('woocommerce_order_status_completed', 'create_wp_customer_area_project' );
-
 function create_wp_customer_area_project( $order_id ) {
   $order = wc_get_order( $order_id );
 
+  error_log("create Project");
+
   $project_id = add_project( $order );
-  add_tasks( $order, $project_id );
+  // add_tasks( $order, $project_id );
   add_invoice( $order, $project_id );
 }
 
@@ -137,17 +134,18 @@ function add_invoice( $order, $project_id ) {
   $user = $order->get_user();
   $invoice_items = [];
 
+  // https://docs.woocommerce.com/wc-apidocs/class-WC_Order_Item.html
   $items = $order->get_items();
-  foreach( $items as $key => $item ) {
-    $invoice_item = [
-        "title" => "Item 1",
-        "description" => "",
-        "unit_price" => 10,
-        "unit" => "",
-        "quantity" => 1
-                     ];
+  foreach( $items as $item_id => $item ) {
+      $invoice_item = [
+          "title" => $item->get_name(),
+          "description" => "",
+          "unit_price" => $item->get_total(),
+          "unit" => "",
+          "quantity" => $item->get_quantity() 
+      ];
 
-    array_push($invoice_items, $invoice_item );
+      array_push($invoice_items, $invoice_item );
   }
 
   $new_invoice = array(
@@ -168,18 +166,22 @@ function add_invoice( $order, $project_id ) {
   $owner_queryable = "|prj_" . $project_id . "|";
   add_post_meta( $invoice_id, 'cuar_owner_queryable', $owner_queryable );
   add_post_meta( $invoice_id, 'cuar_items', $invoice_items );
+  
+  var_dump_pre($user->has_prop("billing_city"));
+  var_dump_pre($user->get("billing_city"));
   $billing_address = [
-      "name" => "name",
-      "company" => "company",
-      "vat_number" => "nif",
+      "name" => "$user->first_name $user->last_name",
+      "company" => NULL,
+      "vat_number" => NULL,
       "logo_url" => "",
-      "line1" => "street 1",
-      "line 2" => "street 2",
-      "zip" => "postal",
-      "city" => "City",
+      "line1" => $user->get("billing_address_1"),
+      "line 2" => NULL,
+      "zip" => $user->get("billing_postcode"),
+      "city" => $user->get("billing_city"),
       "country" => "ES",
-      "state" => "B"
-                      ];
+      "state" => $user->get("billing_state") 
+  ];
+  
   add_post_meta( $invoice_id, 'cuar_billing_address', $billing_address );
 }
 
@@ -234,6 +236,18 @@ function add_project( $order ) {
   }
 }
 
+/*
+ * Auto Complete all WooCommerce orders.
+ */
+add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
+function custom_woocommerce_auto_complete_order( $order_id ) { 
+    if ( ! $order_id ) {
+        return;
+    }
+
+    $order = wc_get_order( $order_id );
+    $order->update_status( 'completed' );
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Helper
@@ -245,25 +259,11 @@ function var_dump_pre($mixed = null) {
   echo '</pre>';
 
   // output in error_log
+  // is in conflict with CUAR PDF
   // ob_start();
   // var_dump($mixed);
   // error_log(ob_get_clean());
 
   return null;
 }
-
-
-
-// FIX WPCustomerArea Bug:
-// Bootstrap json is loaded twice (once from VamTam theme and once from WPCustomerArea)
-// => deactivate VamTam Boostrap javascript while using WPCustomerArea
-// function fix_cuar_and_theme_bootstrap_conflict(){
-//   if (function_exists('cuar_is_customer_area_page')
-//       && (cuar_is_customer_area_page(get_queried_object_id())
-//           || cuar_is_customer_area_private_content(get_the_ID())))
-//   {
-//     wp_dequeue_script('bootstrap-scripts');
-//   }
-// }
-// add_action('wp_enqueue_scripts', 'fix_cuar_and_theme_bootstrap_conflict', 20);
 ?>
