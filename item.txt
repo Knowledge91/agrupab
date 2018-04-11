@@ -1,0 +1,209 @@
+array(1) {
+  [20]=>
+  object(WC_Order_Item_Product)#15892 (11) {
+    ["extra_data":protected]=>
+    array(9) {
+      ["product_id"]=>
+      int(0)
+      ["variation_id"]=>
+      int(0)
+      ["quantity"]=>
+      int(1)
+      ["tax_class"]=>
+      string(0) ""
+      ["subtotal"]=>
+      int(0)
+      ["subtotal_tax"]=>
+      int(0)
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(2) {
+        ["subtotal"]=>
+        array(0) {
+        }
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data":protected]=>
+    array(11) {
+      ["order_id"]=>
+      int(11217)
+      ["name"]=>
+      string(37) "Homologación de títulos académicos"
+      ["product_id"]=>
+      int(10102)
+      ["variation_id"]=>
+      int(0)
+      ["quantity"]=>
+      int(2)
+      ["tax_class"]=>
+      string(0) ""
+      ["subtotal"]=>
+      string(4) "1000"
+      ["subtotal_tax"]=>
+      string(1) "0"
+      ["total"]=>
+      string(4) "1000"
+      ["total_tax"]=>
+      string(1) "0"
+      ["taxes"]=>
+      array(2) {
+        ["total"]=>
+        array(0) {
+        }
+        ["subtotal"]=>
+        array(0) {
+        }
+      }
+    }
+    ["cache_group":protected]=>
+    string(11) "order-items"
+    ["meta_type":protected]=>
+    string(10) "order_item"
+    ["object_type":protected]=>
+    string(10) "order_item"
+    ["id":protected]=>
+    int(20)
+    ["changes":protected]=>
+    array(0) {
+    }
+    ["object_read":protected]=>
+    bool(true)
+    ["default_data":protected]=>
+    array(11) {
+      ["order_id"]=>
+      int(0)
+      ["name"]=>
+      string(0) ""
+      ["product_id"]=>
+      int(0)
+      ["variation_id"]=>
+      int(0)
+      ["quantity"]=>
+      int(1)
+      ["tax_class"]=>
+      string(0) ""
+      ["subtotal"]=>
+      int(0)
+      ["subtotal_tax"]=>
+      int(0)
+      ["total"]=>
+      int(0)
+      ["total_tax"]=>
+      int(0)
+      ["taxes"]=>
+      array(2) {
+        ["subtotal"]=>
+        array(0) {
+        }
+        ["total"]=>
+        array(0) {
+        }
+      }
+    }
+    ["data_store":protected]=>
+    object(WC_Data_Store)#15747 (4) {
+      ["instance":"WC_Data_Store":private]=>
+      object(WC_Order_Item_Product_Data_Store)#15748 (3) {
+        ["internal_meta_keys":protected]=>
+        array(20) {
+          [0]=>
+          string(9) "_order_id"
+          [1]=>
+          string(5) "_name"
+          [2]=>
+          string(11) "_product_id"
+          [3]=>
+          string(13) "_variation_id"
+          [4]=>
+          string(9) "_quantity"
+          [5]=>
+          string(10) "_tax_class"
+          [6]=>
+          string(9) "_subtotal"
+          [7]=>
+          string(13) "_subtotal_tax"
+          [8]=>
+          string(6) "_total"
+          [9]=>
+          string(10) "_total_tax"
+          [10]=>
+          string(6) "_taxes"
+          [11]=>
+          string(11) "_product_id"
+          [12]=>
+          string(13) "_variation_id"
+          [13]=>
+          string(4) "_qty"
+          [14]=>
+          string(10) "_tax_class"
+          [15]=>
+          string(14) "_line_subtotal"
+          [16]=>
+          string(18) "_line_subtotal_tax"
+          [17]=>
+          string(11) "_line_total"
+          [18]=>
+          string(9) "_line_tax"
+          [19]=>
+          string(14) "_line_tax_data"
+        }
+        ["meta_type":protected]=>
+        string(10) "order_item"
+        ["object_id_field_for_meta":protected]=>
+        string(13) "order_item_id"
+      }
+      ["stores":"WC_Data_Store":private]=>
+      array(18) {
+        ["coupon"]=>
+        string(24) "WC_Coupon_Data_Store_CPT"
+        ["customer"]=>
+        string(22) "WC_Customer_Data_Store"
+        ["customer-download"]=>
+        string(31) "WC_Customer_Download_Data_Store"
+        ["customer-session"]=>
+        string(30) "WC_Customer_Data_Store_Session"
+        ["order"]=>
+        string(23) "WC_Order_Data_Store_CPT"
+        ["order-refund"]=>
+        string(30) "WC_Order_Refund_Data_Store_CPT"
+        ["order-item"]=>
+        string(24) "WC_Order_Item_Data_Store"
+        ["order-item-coupon"]=>
+        string(31) "WC_Order_Item_Coupon_Data_Store"
+        ["order-item-fee"]=>
+        string(28) "WC_Order_Item_Fee_Data_Store"
+        ["order-item-product"]=>
+        string(32) "WC_Order_Item_Product_Data_Store"
+        ["order-item-shipping"]=>
+        string(33) "WC_Order_Item_Shipping_Data_Store"
+        ["order-item-tax"]=>
+        string(28) "WC_Order_Item_Tax_Data_Store"
+        ["payment-token"]=>
+        string(27) "WC_Payment_Token_Data_Store"
+        ["product"]=>
+        string(25) "WC_Product_Data_Store_CPT"
+        ["product-grouped"]=>
+        string(33) "WC_Product_Grouped_Data_Store_CPT"
+        ["product-variable"]=>
+        string(34) "WC_Product_Variable_Data_Store_CPT"
+        ["product-variation"]=>
+        string(35) "WC_Product_Variation_Data_Store_CPT"
+        ["shipping-zone"]=>
+        string(27) "WC_Shipping_Zone_Data_Store"
+      }
+      ["current_class_name":"WC_Data_Store":private]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["object_type":"WC_Data_Store":private]=>
+      string(18) "order-item-product"
+    }
+    ["meta_data":protected]=>
+    array(0) {
+    }
+  }
+}

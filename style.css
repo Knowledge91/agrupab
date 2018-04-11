@@ -19,7 +19,7 @@ Woocommerce Shortcode styling
 }
 .woocommerce-Price-currencySymbol:after {
     font-weight: normal;
-	  content: " (IVA y tasas incluidas) ";
+	  content: "* ";
 }
 
 

@@ -49,9 +49,11 @@ function set_default_owner( $post_id, $post, $previous_owners, $new_owners ) {
     // if creator is not owner add as owner
     $is_current_user_owner = false;
 
-    foreach ( $new_owners['usr'] as $valor ) {
-        if ($valor == $current_user_id) {
-            $is_current_user_owner = true;
+    if (is_array($new_owners['usr']) || is_object($new_owners['usr'])) {
+        foreach ( $new_owners['usr'] as $valor ) {
+            if ($valor == $current_user_id) {
+                $is_current_user_owner = true;
+            }
         }
     }
 
@@ -167,8 +169,6 @@ function add_invoice( $order, $project_id ) {
   add_post_meta( $invoice_id, 'cuar_owner_queryable', $owner_queryable );
   add_post_meta( $invoice_id, 'cuar_items', $invoice_items );
   
-  var_dump_pre($user->has_prop("billing_city"));
-  var_dump_pre($user->get("billing_city"));
   $billing_address = [
       "name" => "$user->first_name $user->last_name",
       "company" => NULL,
@@ -266,4 +266,7 @@ function var_dump_pre($mixed = null) {
 
   return null;
 }
+
+// INVOICE PDF avoid TCPDF ERROR
+ob_end_clean();
 ?>

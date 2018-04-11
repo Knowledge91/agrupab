@@ -1,0 +1,2115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Customer Area Invoicing\n"
+"Report-Msgid-Bugs-To: http://github.com/marvinlabs/customer-area-build-"
+"environment/issues\n"
+"POT-Creation-Date: 2017-10-13 13:05+0200\n"
+"PO-Revision-Date: 2018-04-11 15:51+0200\n"
+"Last-Translator: Thomas Lartaud <contact@thomaslartaud.com>\n"
+"Language-Team: MarvinLabs\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../src/php/customer-invoices-home/customer-invoices-home-addon.class.php:30
+msgid "Invoices - Home"
+msgstr "Facturas - Inicio"
+
+#: ../src/php/customer-invoices-home/customer-invoices-home-addon.class.php:34
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:113
+#: ../src/php/invoicing/invoicing-addon.class.php:186
+msgid "Invoices"
+msgstr "Facturas"
+
+#: ../src/php/customer-invoices-home/customer-invoices-home-addon.class.php:38
+msgid "Root page for the customer invoices."
+msgstr "Page d'accueil pour les factures de l'utilisateur."
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:36
+msgid "Invoices - Owned"
+msgstr "Factures - Assignées"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:41
+msgid "My invoices"
+msgstr "Mis facturas"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:46
+msgid "Page to list the invoices a customer owns."
+msgstr "Page pour lister les factures dont l'utilisateur est le destinataire"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:74
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:76
+#: ../src/php/customer-invoices/widget-invoice-statuses.class.php:38
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:231
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:150
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:64
+#: ../src/php/invoicing/templates/invoice-editor-settings.template.php:20
+msgid "Status"
+msgstr "Estatdo"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:86
+msgid "Invoices you published"
+msgstr "Factures que vous avez publiées "
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:91
+#, php-format
+msgid "Invoices published by %1$s"
+msgstr "Factures publiées par %1$s"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:96
+#, php-format
+msgid "Invoices with status: %1$s"
+msgstr "Factures ayant le statut : %1$s"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:103
+#, php-format
+msgid "Invoices published in %2$s %1$s"
+msgstr "Factures publiées en %2$s %1$s"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:105
+#, php-format
+msgid "Invoices published in %1$s"
+msgstr "Factures avec le statut %1$s"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:118
+msgid "Recent Invoices"
+msgstr "Factures récentes"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:133
+msgid "Download"
+msgstr "Descargar"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:134
+msgid "Download the invoice as a PDF file"
+msgstr "Télécharger la facture au format PDF"
+
+#: ../src/php/customer-invoices/customer-invoices-addon.class.php:192
+msgid "You are not authorized to access this invoice"
+msgstr "Vous n'êtes pas autorisé à voir cette facture"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-dashboard.template.php:36
+msgid "View all"
+msgstr "Tout voir"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-empty-category_archive.template.php:23
+msgid "There are no invoices in that category."
+msgstr "Aucune facture correspondant à ce statut."
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-empty-dashboard.template.php:28
+#: ../src/php/customer-invoices/templates/customer-invoices-content-empty.template.php:21
+msgid "You currently have no invoices."
+msgstr "Vous n'avez actuellement aucune factures."
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-empty-date_archive.template.php:18
+msgid "There are no invoices for that period."
+msgstr "Aucune factures pour cette période."
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item-container.template.php:29
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item-dashboard.template.php:29
+#, php-format
+msgid "Added on %s"
+msgstr "Ajoutée le %s"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item-container.template.php:36
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item-dashboard.template.php:36
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item.template.php:82
+#, php-format
+msgid "Due on %1$s"
+msgstr "Due le %1$s"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item.template.php:77
+msgid "Created on"
+msgstr "Creado el"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item.template.php:105
+msgid "Created by"
+msgstr "Créée par"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content-item.template.php:108
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:235
+msgid "Assigned to"
+msgstr "Assignée à"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content.template.php:30
+#, php-format
+msgid "Page %1$s/%2$s"
+msgstr "Page %1$s/%2$s"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-content.template.php:39
+msgid "No items were found matching the selected filters"
+msgstr "Aucun article trouvé correspondant à ces filtres"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:33
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:56
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:49
+#: ../src/php/invoicing/templates/invoice-summary-for-payment.template.php:7
+msgid "Invoice"
+msgstr "Factura"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:36
+msgid "Invoice number"
+msgstr "Numéro de facture"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:65
+msgid "Information"
+msgstr "Información"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:72
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:146
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:60
+msgid "Created"
+msgstr "Creado"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:88
+msgid "Payment"
+msgstr "Método de pago"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:95
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:234
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:154
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:68
+#: ../src/php/invoicing/templates/invoice-editor-settings.template.php:39
+#: ../src/php/invoicing/templates/invoice-summary-for-payment.template.php:13
+msgid "Due date"
+msgstr "Fecha de vencimiento"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:103
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:159
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:73
+#: ../src/php/invoicing/templates/invoice-summary-for-payment.template.php:21
+msgid "None"
+msgstr "Ninguna"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:108
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:164
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:78
+msgid "Amount due"
+msgstr "Cantidad adeudada"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:114
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:170
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:84
+#: ../src/php/invoicing/templates/invoice-editor-settings.template.php:69
+#: ../src/php/invoicing/templates/invoice-summary-for-payment.template.php:28
+msgid "Payment mode"
+msgstr "Metodo de pago"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:132
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:42
+msgid "From"
+msgstr "De"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:146
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:84
+msgid "To"
+msgstr "Para"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:179
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:103
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:95
+#: ../src/php/invoicing/templates/invoice-editor-item-list.template.php:16
+msgid "Item"
+msgstr "Articulo"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:180
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:105
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:96
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:180
+#: ../src/php/invoicing/templates/invoice-editor-item-list.template.php:17
+msgid "Qty"
+msgstr "Qté"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:181
+msgid "Unit price (excl. taxes)"
+msgstr "Precio Unitario (IVA excluido)"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:182
+msgid "Total price (excl. taxes)"
+msgstr "Precio Total (IVA excluido)"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:219
+msgid "Totals"
+msgstr "Total"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:227
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:179
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:119
+#: ../src/php/invoicing/templates/invoice-summary-for-payment.template.php:39
+msgid "Subtotal (excl. taxes)"
+msgstr "Sub-total (IVA excluido)"
+
+#: ../src/php/customer-invoices/templates/customer-invoices-single-post-footer.template.php:270
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:203
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:142
+#: ../src/php/invoicing/templates/invoice-summary-for-payment.template.php:82
+msgid "Total"
+msgstr "Total"
+
+#: ../src/php/customer-invoices/widget-invoice-statuses.class.php:24
+msgid "WPCA - Invoice Statuses"
+msgstr "WPCA - Statuts des factures"
+
+#: ../src/php/customer-invoices/widget-invoice-statuses.class.php:26
+msgid "Shows the invoice statuses of the Customer Area"
+msgstr "Montre les statuts des factures de l'espace privé"
+
+#: ../src/php/functions/invoicing.php:287
+#, php-format
+msgid "Discount - %1$.2f %%"
+msgstr " Descuento- %1$.2f %%"
+
+#: ../src/php/functions/invoicing.php:289
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:107
+#: ../src/php/invoicing/templates/invoice-editor-totals.template.php:20
+#: ../src/php/invoicing/templates/invoice-editor-totals.template.php:36
+msgid "Discount"
+msgstr "Descuento"
+
+#: ../src/php/functions/invoicing.php:299
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:524
+msgid "No taxes"
+msgstr "Sin IVA"
+
+#: ../src/php/functions/invoicing.php:301
+#, php-format
+msgid "Taxes - %1$.2f %%"
+msgstr "Taxes - %1$.2f %%"
+
+#: ../src/php/functions/invoicing.php:303
+#, php-format
+msgid "%2$s - %1$.2f %%"
+msgstr "%2$s - %1$.2f %%"
+
+#: ../src/php/invoice-status.class.php:24
+#: ../src/php/invoice-status.class.php:38
+msgctxt "cuar_invoice_status"
+msgid "Invoice Statuses"
+msgstr "Statuts de facture"
+
+#: ../src/php/invoice-status.class.php:25
+msgctxt "cuar_invoice_status"
+msgid "Invoice Status"
+msgstr "Statut de facture"
+
+#: ../src/php/invoice-status.class.php:26
+msgctxt "cuar_invoice_status"
+msgid "Search Invoice Statuses"
+msgstr "Chercher des statuts de facture"
+
+#: ../src/php/invoice-status.class.php:27
+msgctxt "cuar_invoice_status"
+msgid "Popular Invoice Statuses"
+msgstr "Statuts de facture populaires"
+
+#: ../src/php/invoice-status.class.php:28
+msgctxt "cuar_invoice_status"
+msgid "All Invoice Statuses"
+msgstr "Tous les statuts de facture"
+
+#: ../src/php/invoice-status.class.php:29
+msgctxt "cuar_invoice_status"
+msgid "Parent Invoice Status"
+msgstr "Statut de facture parent"
+
+#: ../src/php/invoice-status.class.php:30
+msgctxt "cuar_invoice_status"
+msgid "Parent Invoice Status:"
+msgstr "Statut de facture parent :"
+
+#: ../src/php/invoice-status.class.php:31
+msgctxt "cuar_invoice_status"
+msgid "Edit Invoice Status"
+msgstr "Modifier le statut de facture"
+
+#: ../src/php/invoice-status.class.php:32
+msgctxt "cuar_invoice_status"
+msgid "Update Invoice Status"
+msgstr "Modifier le statut de la facture"
+
+#: ../src/php/invoice-status.class.php:33
+msgctxt "cuar_invoice_status"
+msgid "Add New Invoice Status"
+msgstr "Ajouter un statut de facture"
+
+#: ../src/php/invoice-status.class.php:34
+msgctxt "cuar_invoice_status"
+msgid "New Invoice Status"
+msgstr "Ajouter un statut de facture"
+
+#: ../src/php/invoice-status.class.php:35
+msgctxt "cuar_invoice_status"
+msgid "Separate invoice statuses with commas"
+msgstr "Séparez les statuts de facture avec des virgules"
+
+#: ../src/php/invoice-status.class.php:36
+msgctxt "cuar_invoice_status"
+msgid "Add or remove invoice statuses"
+msgstr "Ajouter ou enlever des statuts de facture"
+
+#: ../src/php/invoice-status.class.php:37
+msgctxt "cuar_invoice_status"
+msgid "Choose from the most used invoice statuses"
+msgstr "Choisir parmi les statuts de facture les plus courants"
+
+#: ../src/php/invoice.class.php:626 ../src/php/invoice.class.php:637
+#: ../src/php/invoicing/helpers/invoice-helper.class.php:107
+msgctxt "cuar_invoice"
+msgid "Invoices"
+msgstr "Factures"
+
+#: ../src/php/invoice.class.php:627
+#: ../src/php/invoicing/helpers/invoice-helper.class.php:106
+msgctxt "cuar_invoice"
+msgid "Invoice"
+msgstr "Facture"
+
+#: ../src/php/invoice.class.php:628
+msgctxt "cuar_invoice"
+msgid "Add New"
+msgstr "Ajouter un nouveau"
+
+#: ../src/php/invoice.class.php:629
+msgctxt "cuar_invoice"
+msgid "Add New Invoice"
+msgstr "Ajouter une facture"
+
+#: ../src/php/invoice.class.php:630
+msgctxt "cuar_invoice"
+msgid "Edit Invoice"
+msgstr "Modifier la facture"
+
+#: ../src/php/invoice.class.php:631
+msgctxt "cuar_invoice"
+msgid "New Invoice"
+msgstr "Nouvelle facture"
+
+#: ../src/php/invoice.class.php:632
+msgctxt "cuar_invoice"
+msgid "View Invoice"
+msgstr "Voir la facture"
+
+#: ../src/php/invoice.class.php:633
+msgctxt "cuar_invoice"
+msgid "Search Invoices"
+msgstr "Chercher des factures"
+
+#: ../src/php/invoice.class.php:634
+msgctxt "cuar_invoice"
+msgid "No invoice found"
+msgstr "Aucune facture trouvée"
+
+#: ../src/php/invoice.class.php:635
+msgctxt "cuar_invoice"
+msgid "No invoice found in Trash"
+msgstr "Aucune facture trouvée dans la corbeille"
+
+#: ../src/php/invoice.class.php:636
+msgctxt "cuar_invoice"
+msgid "Parent Invoice:"
+msgstr "Facture parente :"
+
+#: ../src/php/invoicing/helpers/invoice-editor-helper.class.php:138
+msgid "Load"
+msgstr "Charger"
+
+#: ../src/php/invoicing/helpers/invoice-editor-helper.class.php:139
+msgid "Load default address from current owner"
+msgstr "Charger l'adresse par défaut du propriétaire actuel"
+
+#: ../src/php/invoicing/helpers/invoice-editor-helper.class.php:142
+msgid "Save"
+msgstr "Sauver"
+
+#: ../src/php/invoicing/helpers/invoice-editor-helper.class.php:143
+msgid "Save as default address for the current owner"
+msgstr "Sauvegarder comme adresse par défaut pour le propriétaire actuel"
+
+#: ../src/php/invoicing/helpers/invoice-editor-helper.class.php:146
+msgid "Clear"
+msgstr "Effacer"
+
+#: ../src/php/invoicing/helpers/invoice-editor-helper.class.php:147
+msgid "Clear the address"
+msgstr "Effacer l'adresse"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:71
+msgid "Invoice status"
+msgstr "Statut de la facture"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:72
+msgid "Invoice notice"
+msgstr "Facture - note"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:73
+msgid "Invoice currency"
+msgstr "Facture - monnaie"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:74
+msgid "Invoice taxes"
+msgstr "Facture - taxes"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:75
+msgid "Invoice discount"
+msgstr "Facture - remise"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:76
+msgid "Invoice due date"
+msgstr "Facture - date butoir"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:77
+msgid "Invoice payment mode"
+msgstr "Facture - moyen de paiement"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:78
+msgid "Invoice billing address"
+msgstr "Adresse de facturation"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:79
+msgid "Invoice items total"
+msgstr "Facture - total items"
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:127
+msgid "Previous value: "
+msgstr "Valeur précédente : "
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:128
+msgid "From: "
+msgstr "De : "
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:132
+msgid "Current value: "
+msgstr "Valeur actuelle : "
+
+#: ../src/php/invoicing/helpers/invoice-logger.class.php:133
+msgid "To: "
+msgstr "Para : "
+
+#: ../src/php/invoicing/helpers/invoice-pdf-helper.class.php:28
+msgid "Modern"
+msgstr "Moderne"
+
+#: ../src/php/invoicing/helpers/invoice-pdf-helper.class.php:29
+msgid "Blocs"
+msgstr "Blocs"
+
+#: ../src/php/invoicing/helpers/invoice-pdf-helper.class.php:65
+msgid "Invoice:"
+msgstr "Facture :"
+
+#: ../src/php/invoicing/helpers/invoice-pdf-helper.class.php:87
+msgctxt "Invoice PDF filename prefix"
+msgid "invoice"
+msgstr "facture"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:481
+msgid "No tax"
+msgstr "Pas de taxe"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:499
+msgctxt "Invoice item unit singular"
+msgid "unit"
+msgstr "unité"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:500
+msgctxt "Invoice item unit plural"
+msgid "units"
+msgstr "unités"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:503
+msgctxt "Invoice item unit singular"
+msgid "time"
+msgstr "fois"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:504
+msgctxt "Invoice item unit plural"
+msgid "times"
+msgstr "fois"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:507
+msgctxt "Invoice item unit singular"
+msgid "day"
+msgstr "jour"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:508
+msgctxt "Invoice item unit plural"
+msgid "days"
+msgstr "jours"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:511
+msgctxt "Invoice item unit singular"
+msgid "hour"
+msgstr "heure"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:512
+msgctxt "Invoice item unit plural"
+msgid "hours"
+msgstr "heures"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:535
+msgctxt "Slug for URL to download an invoice"
+msgid "download"
+msgstr "descargar"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:559
+#: ../src/php/invoicing/invoicing-addon.class.php:42
+msgid "Invoicing"
+msgstr "Facturation"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:573
+msgid "General settings"
+msgstr "Réglages généraux"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:580
+msgid "Default status"
+msgstr "Statut par défaut"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:594
+msgid "Closed statuses"
+msgstr "Statuts fermés"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:603
+msgid ""
+"Consider that the invoice is not due by the client anymore when it has any "
+"of these statuses."
+msgstr ""
+"Considérer que la facture n'est plus due par le client quand elle a un des "
+"statuts suivants."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:611
+msgid ""
+"Automatically set invoice to this status when payments total amount "
+"corresponds to invoice amount"
+msgstr ""
+"Régler automatiquement la facture à ce statut quand le montant total des "
+"paiements correspond au montant de la facture"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:617
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:631
+msgid "Do not update invoice status"
+msgstr "Ne pas mettre à jour le statut de la facture"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:625
+msgid ""
+"Automatically set invoice to this status when payments total amount does not "
+"correspond to invoice amount anymore"
+msgstr ""
+"Régler automatiquement la facture à ce statut quand le montant total des "
+"paiements ne correspond plus au montant de la facture"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:639
+msgid "Default currency"
+msgstr "Monnaie par défaut"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:653
+msgid "PDF template settings"
+msgstr "Options de modèle PDF"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:660
+msgid "PDF template"
+msgstr "Modèle PDF"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:669
+msgid ""
+"Each template may provide (or not) additional settings for colors, images, "
+"etc."
+msgstr ""
+"Chaque modèle peut fournir des options supplémentaires pour les couleurs, "
+"arrière-plans, etc."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:679
+msgid "Invoice numbering"
+msgstr "Numérotation des factures"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:686
+msgid "Format"
+msgstr "Format"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:694
+msgid ""
+"{{number}} will be replaced by the invoice number. This allows you to prefix/"
+"suffix the displayed invoice number."
+msgstr ""
+"{{number}} sera remplacé par le numéro de facture. Ceci vous permet "
+"d'ajouter des préfixes ou suffixes au numéro de facture."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:701
+msgid "Padding"
+msgstr "Chiffres"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:709
+msgid ""
+"Minimal amount of characters for the number: will add leading zeros if less. "
+"E.g. a setting of 5 will transform 234 into 00234. A setting of 0 will keep "
+"the original number."
+msgstr ""
+"Nombre de chiffres dans le numéro de facture : ajoute des zéros si le numéro "
+"n'a pas le nombre de chiffres. Ex : un réglage de 5 transforme 234 en 00234. "
+"Un réglage de 0 garde le numéro original."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:716
+msgid "Sequential numbering"
+msgstr "Numérotation séquentielle"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:724
+msgid ""
+"If checked, invoice numbers will be sequential. If not, the invoice numbers "
+"will be given by the post ID."
+msgstr ""
+"Si coché, les numéros de facture seront séquentiels. Sinon, le numéro de "
+"facture sera l'ID du post."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:730
+msgid "Start at"
+msgstr "Démarre à"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:738
+msgid "Sequential numbering will start from this value."
+msgstr "La numérotation séquentielle démarrera de ce nombre."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:745
+msgid "Your business"
+msgstr "Votre entreprise"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:752
+msgid "General info."
+msgstr "Info. générales"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:764
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:80
+msgid "Texts"
+msgstr "Textes"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:771
+msgid "Header"
+msgstr "En-tête"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:779
+msgid "Text shown on top of the invoice."
+msgstr "Texte affiché au dessus de la facture."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:786
+msgid "Footer"
+msgstr "Pied de page"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:794
+msgid "Text shown at the bottom of the invoice."
+msgstr "Texte affiché en dessous de la facture."
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:885
+#, php-format
+msgid "[Default: %s]"
+msgstr "[Défaut: %s]"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:899
+msgid "Top background"
+msgstr "Arrière plan d'en-tête"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:902
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:909
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:916
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:923
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:930
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:937
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:944
+msgid "Hexadecimal format, example: #123456"
+msgstr "Format hexadécimal, exemple&nbsp;:#123456"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:906
+msgid "Top text"
+msgstr "Texte d'en-tête"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:913
+msgid "Table header background"
+msgstr "Arrière plan d'en-tête de tableau"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:920
+msgid "Table header text"
+msgstr "Texte d'en-tête de tableau"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:927
+msgid "Table background"
+msgstr "Arrière plan de tableau"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:934
+msgid "Table text"
+msgstr "Texte de tableau"
+
+#: ../src/php/invoicing/helpers/invoice-settings-helper.class.php:941
+msgid "Default text"
+msgstr "Texte par défaut"
+
+#: ../src/php/invoicing/helpers/invoice-status-helper.class.php:34
+msgid "Open"
+msgstr "Abierto"
+
+#: ../src/php/invoicing/helpers/invoice-status-helper.class.php:35
+msgid "Paid"
+msgstr "Pagado"
+
+#: ../src/php/invoicing/helpers/invoice-status-helper.class.php:36
+msgid "Cancelled"
+msgstr "Anulado"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:62
+msgid "Billing address"
+msgstr "Adresse de facturation"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:71
+msgid "Items"
+msgstr "Items"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:89
+msgid "Invoice totals"
+msgstr "Facture - Totaux"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:98
+msgid "Invoice properties"
+msgstr "Propriétés de la facture"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:116
+#: ../src/php/invoicing/templates/invoice-editor-totals.template.php:25
+#: ../src/php/invoicing/templates/invoice-editor-totals.template.php:31
+msgid "Taxes"
+msgstr "Taxes"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:232
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:24
+msgid "Amount"
+msgstr "Montant"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:233
+msgid "Client"
+msgstr "Client"
+
+#: ../src/php/invoicing/helpers/invoicing-admin-interface.class.php:268
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:189
+msgid "Back-office"
+msgstr "Administration"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:191
+msgid "List all invoices"
+msgstr "Lister toutes les factures"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:192
+msgid "Create/Edit invoices"
+msgstr "Créer/modifier des factures"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:193
+msgid "Delete invoices"
+msgstr "Effacer les factures"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:194
+msgid "Access invoices"
+msgstr "Voir les factures"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:195
+msgid "Manage statuses"
+msgstr "Gérer les statuts"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:196
+msgid "Edit statuses"
+msgstr "Modifier les statuts"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:197
+msgid "Delete statuses"
+msgstr "Effacer les statuts"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:198
+msgid "Assign statuses"
+msgstr "Affecter un statut"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:202
+msgid "Front-office"
+msgstr "Site"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:204
+msgid "View any invoice"
+msgstr "Voir n'importe quelle facture"
+
+#: ../src/php/invoicing/invoicing-addon.class.php:205
+msgid "View invoices"
+msgstr "Voir les factures"
+
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:107
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:97
+msgid "Unit price"
+msgstr "Prix unitaire"
+
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:108
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:113
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:97
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:98
+msgid "(excl. taxes)"
+msgstr "(H.T.)"
+
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-blocs.template.php:112
+#: ../src/php/invoicing/pdf-templates/pdf-invoice-default.template.php:98
+msgid "Total price"
+msgstr "Prix total"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:11
+msgid "Type"
+msgstr "Type"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:15
+msgid "No discount"
+msgstr "Aucune remise"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:16
+msgid "Fixed amount"
+msgstr "Montant fixe"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:17
+msgid "Percentage"
+msgstr "Pourcentage"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:28
+msgid "Percentage or amount to deduce from the invoice"
+msgstr "Pourcentage ou montant à déduire de la facture"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:32
+msgid "When to apply discount?"
+msgstr "Quand appliquer la réduction ?"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:36
+msgid "Before taxes"
+msgstr "Avant les taxes"
+
+#: ../src/php/invoicing/templates/invoice-editor-discount.template.php:37
+msgid "After taxes"
+msgstr "Après les taxes"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list-item.template.php:21
+msgid "Item title"
+msgstr "Titre"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list-item.template.php:37
+msgid "Item description"
+msgstr "Description"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list-item.template.php:45
+msgid "Move"
+msgstr "Déplacer"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list-item.template.php:47
+msgid "Add a description"
+msgstr "Ajouter une description"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list-item.template.php:49
+msgid "Remove"
+msgstr "Supprimer"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list.template.php:11
+msgid "Add"
+msgstr "Ajouter"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list.template.php:18
+msgid "Unit"
+msgstr "Unité"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list.template.php:19
+msgid "Price"
+msgstr "Prix"
+
+#: ../src/php/invoicing/templates/invoice-editor-item-list.template.php:40
+msgid "This invoice currently does not have any items"
+msgstr "Cette facture n'a aucun item"
+
+#: ../src/php/invoicing/templates/invoice-editor-settings.template.php:14
+#, php-format
+msgid "Invoice: %1$s"
+msgstr "Factura : %1$s"
+
+#: ../src/php/invoicing/templates/invoice-editor-settings.template.php:52
+msgid "Currency"
+msgstr "Monnaie"
+
+#: ../src/php/invoicing/templates/invoice-editor-tax-rate.template.php:12
+msgid "Apply predefined rate"
+msgstr "Appliquer le taux prédéfini"
+
+#: ../src/php/invoicing/templates/invoice-editor-tax-rate.template.php:27
+msgid "Label"
+msgstr "Libellé"
+
+#: ../src/php/invoicing/templates/invoice-editor-tax-rate.template.php:30
+msgid "Name of the tax"
+msgstr "Nom de la taxe"
+
+#: ../src/php/invoicing/templates/invoice-editor-tax-rate.template.php:36
+msgid "Rate"
+msgstr "Taux"
+
+#: ../src/php/invoicing/templates/invoice-editor-tax-rate.template.php:39
+msgid "Percentage of tax to apply to the items"
+msgstr "Pourcentage de taxe à appliquer aux items"
+
+#: ../src/php/invoicing/templates/invoice-editor-texts.template.php:11
+msgid "Notice or thank-you note"
+msgstr "Note ou message de remerciement"
+
+#: ../src/php/invoicing/templates/invoice-editor-totals.template.php:13
+msgid "Items total"
+msgstr "Sous-total"
+
+#: ../src/php/invoicing/templates/invoice-editor-totals.template.php:43
+msgid "Invoice total"
+msgstr "Total de la facture"
+
+#~ msgid "Publish invoices for your clients"
+#~ msgstr "Publier des factures pour vos clients"
+
+#~ msgid "Due"
+#~ msgstr "Due"
+
+#, fuzzy
+#~ msgid "Number"
+#~ msgstr "Membres"
+
+#, fuzzy
+#~ msgid "Any type"
+#~ msgstr "Par type"
+
+#~ msgid "and"
+#~ msgstr "et"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "Add New"
+#~ msgstr "Ajouter un nouveau"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "Add New Item"
+#~ msgstr "Ajouter un nouveau"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "View Item"
+#~ msgstr "Voir la réponse"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "Search Invoice Items"
+#~ msgstr "Chercher des catégories de fichier"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "No item found"
+#~ msgstr "Aucune réponse trouvée"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "No item found in Trash"
+#~ msgstr "Aucune réponse trouvée dans la corbeille"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "Parent Invoice:"
+#~ msgstr "Conversation parente :"
+
+#, fuzzy
+#~ msgctxt "cuar_inv_item"
+#~ msgid "Invoices"
+#~ msgstr "Services"
+
+#~ msgid "Your reply is empty!"
+#~ msgstr "Votre réponse est vide !"
+
+#~ msgid "Conversations"
+#~ msgstr "Conversations"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Conversations"
+#~ msgstr "Conversations"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Add New Conversation"
+#~ msgstr "Ajouter une Conversation"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Edit Conversation"
+#~ msgstr "Modifier la Conversation"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "New Conversation"
+#~ msgstr "Nouvelle Conversation"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "View Conversation"
+#~ msgstr "Voir la Conversation"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Search Conversations"
+#~ msgstr "Chercher une Conversation"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "No conversation found"
+#~ msgstr "Aucune conversation trouvée"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "No conversation found in Trash"
+#~ msgstr "Aucune conversation trouvée dans la corbeille"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Conversation Replies"
+#~ msgstr "Réponses"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Conversation Reply"
+#~ msgstr "Réponse"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "New Reply"
+#~ msgstr "Nouvelle réponse"
+
+#~ msgctxt "cuar_conversation"
+#~ msgid "Search Conversation Replies"
+#~ msgstr "Chercher une Réponse"
+
+#~ msgid "View conversations"
+#~ msgstr "Voir les conversations"
+
+#~ msgid "Reply to a conversation"
+#~ msgstr "Répondre à une conversation"
+
+#~ msgid "Replies"
+#~ msgstr "Réponses"
+
+#~ msgid "%1$s replied on %2$s"
+#~ msgstr "%1$s a répondu le %2$s"
+
+#~ msgid "No replies yet"
+#~ msgstr "Aucune réponse"
+
+#~ msgid "Conversations - Owned"
+#~ msgstr "Conversations - Assignées"
+
+#~ msgid "My conversations"
+#~ msgstr "Mes conversations"
+
+#~ msgid "Archives"
+#~ msgstr "Archives"
+
+#~ msgid "Conversations you started"
+#~ msgstr "Conversations que vous avez ouvert"
+
+#~ msgid "Conversations started by %1$s"
+#~ msgstr "Conversation ouverte par %1$s"
+
+#~ msgid "Conversations under %1$s"
+#~ msgstr "Conversations classées dans %1$s"
+
+#~ msgid "Conversations started in %1$s"
+#~ msgstr "Conversations ouvertes en %1$s"
+
+#~ msgid "Recent Conversations"
+#~ msgstr "Conversations Récentes"
+
+#~ msgid "Rich Editor"
+#~ msgstr "Editeur amélioré"
+
+#~ msgid "Enable the rich editor for the reply form."
+#~ msgstr "Activer l'éditeur amélioré pour les réponses."
+
+#~ msgid "Customer Area - Conversation Authors"
+#~ msgstr "Espace client - Auteurs de conversations"
+
+#~ msgid "Shows the conversation author archives of the Customer Area"
+#~ msgstr "Affiche les archives de conversations par auteur de l'espace client"
+
+#~ msgid "Customer Area - Conversation Archives"
+#~ msgstr "Espace client - Archives des conversations"
+
+#~ msgid "Shows the conversation yearly archives of the Customer Area"
+#~ msgstr "Affiche les archives temporelles de l'espace client"
+
+#~ msgid "Latest reply on %s"
+#~ msgstr "Dernière réponse le %s"
+
+#~ msgid "You started this conversation"
+#~ msgstr "Vous avez ouvert cette conversation"
+
+#~ msgid "Conversation with %s"
+#~ msgstr "Conversation avec %s"
+
+#~ msgid "With %s"
+#~ msgstr "Avec %s"
+
+#~ msgid "Started by %s"
+#~ msgstr "Ouverte par %s"
+
+#~ msgid "There are new replies"
+#~ msgstr "Il y a de nouvelles réponses"
+
+#~ msgid "Author"
+#~ msgstr "Auteur"
+
+#~ msgid "Recipient"
+#~ msgstr "Destinataire"
+
+#~ msgid "Date"
+#~ msgstr "Date"
+
+#~ msgid "Reply to this conversation"
+#~ msgstr "Répondre à cette conversation"
+
+#~ msgid "Reply"
+#~ msgstr "Répondre"
+
+#~ msgid "%1$s replied on %2$s at %3$s"
+#~ msgstr "%1$s a répondu le %2$s à %3$s"
+
+#~ msgid "%d reply"
+#~ msgid_plural "%d replies"
+#~ msgstr[0] "%d réponse"
+#~ msgstr[1] "%d réponses"
+
+#~ msgid "Conversations - Home"
+#~ msgstr "Conversations - Accueil"
+
+#~ msgid "Conversations - New"
+#~ msgstr "Conversations - Nouvelle"
+
+#~ msgid "Start conversation"
+#~ msgstr "Nouvelle conversation"
+
+#~ msgid "Page to create new conversations."
+#~ msgstr "Page pour ouvrir une nouvelle conversation."
+
+#~ msgid "The topic cannot be empty"
+#~ msgstr "Le sujet ne peut pas être vide"
+
+#~ msgid "The message cannot be empty"
+#~ msgstr "Le message ne peut pas être vide"
+
+#~ msgid "You must select at least one recipient"
+#~ msgstr "Vous devez sélectionner un destinataire"
+
+#~ msgid "The conversation has been started."
+#~ msgstr "La conversation a bien été créée."
+
+#~ msgid "Topic"
+#~ msgstr "Sujet"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "Send"
+#~ msgstr "Envoyer"
+
+#~ msgid "Private Conversations - Update"
+#~ msgstr "Conversations Privées - Modification"
+
+#~ msgid "Page to update conversations."
+#~ msgstr "Page pour modifier les conversations."
+
+#~ msgid "The title cannot be empty"
+#~ msgstr "Le titre ne peut pas être vide"
+
+#~ msgid "The content cannot be empty"
+#~ msgstr "Le contenu ne peut pas être vide"
+
+#~ msgid "You must select at least one owner"
+#~ msgstr "Vous devez sélectionner un destinataire"
+
+#~ msgid "The conversation has been updated."
+#~ msgstr "La conversation a été mise à jour."
+
+#~ msgid "Update"
+#~ msgstr "Mettre à jour"
+
+#~ msgid "Customer Page - Conversations"
+#~ msgstr "Page Client - Conversations"
+
+#~ msgid "Conversation started on %1$s by %2$s for %3$s"
+#~ msgstr "Conversation commencée le %1$s par %2$s avec %3$s"
+
+#~ msgid "Customer Page - Conversations Root"
+#~ msgstr "Page client - Accueil conversations"
+
+#~ msgid "Customer Page - New Conversation"
+#~ msgstr "Page client - Nouvelle conversation"
+
+#~ msgid "Select a conversation recipient"
+#~ msgstr "Sélectionnez un destinataire"
+
+#~ msgid "Conversations (back-office)"
+#~ msgstr "Conversations (zone admin.)"
+
+#~ msgid "Automatic Updates"
+#~ msgstr "Mise à jour automatisée"
+
+#~ msgid "License key"
+#~ msgstr "Clé de licence"
+
+#~ msgid "Default owner type"
+#~ msgstr "Type de propriétaire par défaut"
+
+#~ msgid ""
+#~ "Do not activate your license on your development site. Only on the final "
+#~ "site where you are running the plugin."
+#~ msgstr ""
+#~ "N'activez pas votre licence sur votre site de développement. Seulement "
+#~ "sur le site final où le plugin sera installé."
+
+#~ msgid "View your conversations"
+#~ msgstr "Voir vos conversations"
+
+#~ msgid "You are not allowed to start conversations"
+#~ msgstr "Vous n'êtes pas autorisé à ouvrir une conversation"
+
+#~ msgid "Trying to cheat?! Please go back and try again."
+#~ msgstr "On triche ?! Revenez en arrière et essayez de nouveau."
+
+#~ msgid "You must set a subject"
+#~ msgstr "Vous devez saisir un sujet"
+
+#~ msgid "You must set a message"
+#~ msgstr "Vous devez écrire un message"
+
+#~ msgid "New Replies"
+#~ msgstr "Nouvelles réponses"
+
+#~ msgid "Subject"
+#~ msgstr "Sujet"
+
+#~ msgid ""
+#~ "The conversation has been started. You can review it on <a href=\"%s"
+#~ "\">that page</s>."
+#~ msgstr ""
+#~ "La conversation a été créée. Vous pouvez la voir en suivant <a href=\"%s"
+#~ "\">ce lien</s>."
+
+#~ msgid "Delete conversations (Admin area)"
+#~ msgstr "Supprimer des conversations (zone admin.)"
+
+#~ msgid "Access conversations (Admin area)"
+#~ msgstr "Lister les conversations (zone admin.)"
+
+#~ msgid "Messenger"
+#~ msgstr "Messagerie"
+
+#~ msgid "You are not authorized to view this conversation"
+#~ msgstr "Vous n'êtes pas autorisé à voir cette conversation"
+
+#~ msgid "Extended Permissions"
+#~ msgstr "Permissions Etendues"
+
+#~ msgid "Role"
+#~ msgstr "Role"
+
+#~ msgid "User Group"
+#~ msgstr "Groupe d'Utilisateurs"
+
+#~ msgid "User Selection"
+#~ msgstr "Sélection d'utilisateurs"
+
+#~ msgid "User Groups"
+#~ msgstr "Groupes d'Utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "User Groups"
+#~ msgstr "Groupes d'Utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "User Group"
+#~ msgstr "Groupe d'Utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "Add New User Group"
+#~ msgstr "Ajouter un groupe d'utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "Edit User Group"
+#~ msgstr "Modifier le groupe d'utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "New User Group"
+#~ msgstr "Nouveau groupe d'utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "View User Group"
+#~ msgstr "Voir le groupe d'utilisateurs"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "Search User Groups"
+#~ msgstr "Chercher un groupe d'utilisateurs : %s"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "No user groups found"
+#~ msgstr "Aucun groupe d'utilisateurs trouvé"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "No user groups found in Trash"
+#~ msgstr "Aucun groupe d'utilisateurs trouvé dans la corbeille"
+
+#~ msgctxt "cuar_user_group"
+#~ msgid "Parent User Group:"
+#~ msgstr "Groupe d'utilisateurs parent :"
+
+#~ msgid "New User Group"
+#~ msgstr "Nouveau le groupe d'utilisateurs"
+
+#~ msgid "Currently, the group includes the following users: "
+#~ msgstr "Actuellement, le groupe inclue les membres suivants :"
+
+#~ msgid "Select the group members"
+#~ msgstr "Sélectionner les membres du groupe"
+
+#~ msgid "This group now has %d member(s)"
+#~ msgstr "Ce group compte maintenant %d membre(s)"
+
+#~ msgid "User Selections"
+#~ msgstr "Sélections d'utilisateurs"
+
+#, fuzzy
+#~ msgid "Projects"
+#~ msgstr "Tous les projets"
+
+#, fuzzy
+#~ msgid "Project"
+#~ msgstr "Type de projet : "
+
+#, fuzzy
+#~ msgid "All Projects"
+#~ msgstr "Tous les projets"
+
+#, fuzzy
+#~ msgid "New Project"
+#~ msgstr "Tous les projets"
+
+#~ msgid "Login & Register Forms"
+#~ msgstr "Formulaires Utilisateurs"
+
+#~ msgid "You can now login with your new password"
+#~ msgstr ""
+#~ "Vous pouvez maintenant vous connecter avec votre nouveau mot de passe"
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: You must write the code displayed in the image "
+#~ "above."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : vous devez recopier le code affichée dans "
+#~ "l'image."
+
+#~ msgid "<strong>ERROR</strong>: The code you entered is not correct."
+#~ msgstr "<strong>ERREUR</strong> : Le code saisi n'est pas correct."
+
+#~ msgid "An email has been sent with the instructions to reset your password."
+#~ msgstr ""
+#~ "Un courriel a été envoyé avec les instructions pour réinitialiser votre "
+#~ "mot de passe."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: You must enter a valid username and a valid email "
+#~ "address."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : vous devez saisir un nom d'utilisateur et une "
+#~ "adresse mél valides"
+
+#~ msgid ""
+#~ "An email has been sent with the instructions to activate your account."
+#~ msgstr ""
+#~ "Un courriel a été envoyé avec des instructions pour activer votre compte."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: Cookies are blocked or not supported by your "
+#~ "browser.You must <a href='http://www.google.com/cookies.html'>enable "
+#~ "cookies</a> to login here."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : les cookies sont bloqués ou ne sont pas "
+#~ "supportés par votre navigateur. Vous devez les activer pour vous "
+#~ "connecter ici."
+
+#~ msgid "<strong>ERROR</strong>: User registration is disabled on this site."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : les inscriptions sont désactivées sur ce site."
+
+#~ msgid "Register"
+#~ msgstr "S'enregistrer"
+
+#~ msgid "Please fill the form below to create your account."
+#~ msgstr "Veuillez remplir le formulaire ci-dessous pour créer votre compte."
+
+#~ msgid "Reset your password"
+#~ msgstr "Réinitialiser votre mot de passe"
+
+#~ msgid "Forgot your password"
+#~ msgstr "Oubli du mot de passe"
+
+#~ msgid ""
+#~ "Write down below the email address corresponding to your account and we "
+#~ "will send instructions to recover your password."
+#~ msgstr ""
+#~ "Inscrivez ci-dessous l'adresse mél correspondant à votre compte et nous "
+#~ "enverrons la marche à suivre pour réinitialiser votre mot de passe."
+
+#~ msgid "Login"
+#~ msgstr "Connexion"
+
+#~ msgid ""
+#~ "You must login to access your own customer area. If you do not have an "
+#~ "account yet, please register or contact us so that we can create it."
+#~ msgstr ""
+#~ "Vous devez être connecté pour accéder à votre zone client. Si vous n'avez "
+#~ "pas encore de compte utilisateur, merci de vous enregistrer ou de nous "
+#~ "contacter pour que nous puissions le créer."
+
+#~ msgid "Customer Area"
+#~ msgstr "Espace Client"
+
+#~ msgid "Login Form"
+#~ msgstr "Formulaire de connexion"
+
+#~ msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : Saississez un nom d'utilisateur ou une adresse "
+#~ "mél."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: There is no user registered with that email "
+#~ "address."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : Il n'y a pas de compte utilisateur "
+#~ "correspondant à cette adresse mél."
+
+#~ msgid "<strong>ERROR</strong>: Invalid username or e-mail."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : Nom d'utilisateur ou adresse mél invalide."
+
+#~ msgid "Password reset is not allowed for this user"
+#~ msgstr "La réinitialisation du mot de passe n'est pas autorisée"
+
+#~ msgid ""
+#~ "Someone requested that the password be reset for the following account:"
+#~ msgstr ""
+#~ "Quelqu'un a demandé une réinitialisation du mot de passe pour le compte "
+#~ "suivant :"
+
+#~ msgid "Username: %s"
+#~ msgstr "Identifiant : %s"
+
+#~ msgid ""
+#~ "If this was a mistake, just ignore this email and nothing will happen."
+#~ msgstr ""
+#~ "Si c'est une erreur, veuillez ignorer ce courriel et rien ne se passera."
+
+#~ msgid "To reset your password, visit the following address:"
+#~ msgstr "Pour réinitialiser votre mot de passe, rendez-vous sur cette page :"
+
+#~ msgid "[%s] Password Reset"
+#~ msgstr "[%s] Réinitialisation du mot de passe"
+
+#~ msgid "Possible reason: your host may have disabled the mail() function..."
+#~ msgstr "Possible reason: your host may have disabled the mail() function..."
+
+#~ msgid "Invalid key"
+#~ msgstr "Clé invalide"
+
+#~ msgid "<strong>ERROR</strong>: Please enter a username."
+#~ msgstr "<strong>ERREUR</strong> : veuillez saisir un identifiant."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: This username is invalid because it uses illegal "
+#~ "characters. Please enter a valid username."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : Cet identifiant est invalide car il comprend "
+#~ "des caractères invalides. Veuillez corriger."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: This username is already registered. Please "
+#~ "choose another one."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : Cet identifiant existe déjà. Veuillez en "
+#~ "choisir un autre."
+
+#~ msgid "<strong>ERROR</strong>: Please type your e-mail address."
+#~ msgstr "<strong>ERREUR</strong> : Veuillez saisir votre adresse mél."
+
+#~ msgid "<strong>ERROR</strong>: The email address isn&#8217;t correct."
+#~ msgstr "<strong>ERREUR</strong> : L'adresse mél est invalide."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: This email is already registered, please choose "
+#~ "another one."
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> : Cette adresse mél correspond déjà à un compte "
+#~ "utilisateur, veuillez en choisir une autre."
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: Couldn&#8217;t register you... please contact the "
+#~ "<a href=\"mailto:%s\">webmaster</a> !"
+#~ msgstr ""
+#~ "<strong>ERREUR</strong> :  Impossible de créer votre compte, contactez le "
+#~ "<a href=\"mailto:%s\">webmaster</a> !"
+
+#~ msgid "New user registration on your site %s:"
+#~ msgstr "Nouvel utilisateur sur votre site %s :"
+
+#~ msgid "E-mail: %s"
+#~ msgstr "Email : %s"
+
+#~ msgid "[%s] New User Registration"
+#~ msgstr "[%s] Nouvelle inscription"
+
+#~ msgid "Password: %s"
+#~ msgstr "Mot de passe : %s"
+
+#~ msgid "[%s] Your username and password"
+#~ msgstr "[%s] Vos identifiant et mot de passe"
+
+#~ msgid "Username"
+#~ msgstr "Identifiant"
+
+#~ msgid "Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Remember me"
+#~ msgstr "Se souvenir de moi"
+
+#~ msgid "Forgot your password?"
+#~ msgstr "Oubli du mot de passe ?"
+
+#~ msgid "Create your account"
+#~ msgstr "Créer votre compte"
+
+#~ msgid "Username or Email"
+#~ msgstr "Identifiant ou adresse mél"
+
+#~ msgid "Spam Check"
+#~ msgstr "Vérification contre le spam"
+
+#~ msgid "Copy the code shown above in the input field."
+#~ msgstr "Copiez le code ci-dessus dans le champ de saisie."
+
+#~ msgid "Get New Password"
+#~ msgstr "Obtenir un nouveau mot de passe"
+
+#~ msgid "A password will be e-mailed to you."
+#~ msgstr "Un mot de passe vous sera envoyé."
+
+#~ msgid "New Password"
+#~ msgstr "Nouveau mot de passe"
+
+#~ msgid "Type your new password again."
+#~ msgstr "Saisissez votre mot de passe de nouveau."
+
+#~ msgid "Change Password"
+#~ msgstr "Changer de mot de passe"
+
+#~ msgid "Email format"
+#~ msgstr "Format du mel"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid ""
+#~ "The format in which login_form get sent. HTML might not always be "
+#~ "properly formatted."
+#~ msgstr ""
+#~ "Le format dans lequel les notifications sont envoyées. HTML peut ne pas "
+#~ "être correctement mis en forme."
+
+#~ msgid "The notification can not be sent if the file is not published"
+#~ msgstr ""
+#~ "La notification ne peut pas être envoyée si le fichier n'est pas publié"
+
+#~ msgid "The notification can not be sent if the file does not have an owner"
+#~ msgstr ""
+#~ "La notification ne peut pas être envoyée si le fichier n'a pas de "
+#~ "propriétaire"
+
+#~ msgid "The notification can not be sent if the file has not been uploaded"
+#~ msgstr ""
+#~ "La notification ne peut pas être envoyée si aucun fichier n'a été "
+#~ "téléversé"
+
+#~ msgid "A notification has been sent to %s"
+#~ msgstr "Une notification a été envoyée à %s"
+
+#~ msgid "Notifications"
+#~ msgstr "Notifications"
+
+#~ msgid "Let the owner know he can access this file"
+#~ msgstr "Informer le propriétaire qu'il peut accéder à ce fichier"
+
+#~ msgid ""
+#~ "The notification will only be sent if you publish the file, if you have "
+#~ "actually uploaded a file and if you have set an owner. Else nothing will "
+#~ "be sent."
+#~ msgstr ""
+#~ "La notification ne sera envoyée que si vous publiez le fichier, si vous "
+#~ "avez téléversé un fichier et si vous lui avez assigné un propriétaire. "
+#~ "Sinon rien ne sera envoyé."
+
+#~ msgid "The emails will be shown as sent by this name."
+#~ msgstr "Les courriels seront vus comme envoyés de ce nom."
+
+#~ msgid "The emails will be shown as sent from this address."
+#~ msgstr "Les courriels seront vus comme envoyés de cette adresse."
+
+#~ msgid "New Private File"
+#~ msgstr "Nouveau Fichier Privé"
+
+#~ msgid "Mode"
+#~ msgstr "Mode"
+
+#~ msgid "Disabled"
+#~ msgstr "Désactivé"
+
+#~ msgid "Enabled"
+#~ msgstr "Activé"
+
+#~ msgid "Body"
+#~ msgstr "Contenu"
+
+#~ msgid "Private File Download"
+#~ msgstr "Téléchargement d'un Fichier Privé"
+
+#~ msgid "Only the first time"
+#~ msgstr "Seulement la première fois"
+
+#~ msgid "Always"
+#~ msgstr "Toujours"
+
+#~ msgid ""
+#~ "You can choose whether you want to enable this notification. If you do, "
+#~ "you can opt to receive the notifications only the first time the user "
+#~ "downloads the file or every time he does it."
+#~ msgstr ""
+#~ "Vous pouvez choisir d'activer cette notification ou non. Si oui, vous "
+#~ "pouvez choisir de la recevoir seulement la première fois que le fichier "
+#~ "est téléchargé ou à chaque fois."
+
+#~ msgid "A new file for you is available on %site_name%"
+#~ msgstr "Un fichier est disponible sur votre espace client de %site_name%"
+
+#~ msgid ""
+#~ "<p>Hello %file_owner%,</p><p>A new file (%file_title%) has been made "
+#~ "available for you in our customer area. You can download it by following "
+#~ "the link: %file_url%</p><p>Best regards,</p><p>%from_name%<br/>%site_url"
+#~ "%</p>"
+#~ msgstr ""
+#~ "<p>Bonjour %file_owner%,</p><p>Un nouveau fichier (%file_title%) a été "
+#~ "déposé dans votre espace client. Vous pouvez le télécharger en suivant le "
+#~ "lien : %file_url%</p><p>Cordialement,</p><p>%from_name%<br/>%site_url%</p>"
+
+#~ msgid "New file download on %site_name%"
+#~ msgstr "Nouveau téléchargement sur %site_name%"
+
+#~ msgid ""
+#~ "<p>Hello,</p><p>A file (%file_title%) has been downloaded by "
+#~ "%download_user%.</p><p>Best regards,</p><p>The customer area plugin<br/>"
+#~ "%site_url%</p>"
+#~ msgstr ""
+#~ "<p>Bonjour,</p><p>Un fichier (%file_title%) a été téléchargé par "
+#~ "%download_user%.</p><p>Cordialement,</p><p>Votre plugin zone client<br/>"
+#~ "%site_url%</p>"
+
+#~ msgid ""
+#~ "Define here the email that will get sent to a user when a new private "
+#~ "file is uploaded for him."
+#~ msgstr ""
+#~ "Définissez ici le courriel envoyé à un utilisateur quand un nouveau "
+#~ "fichier est déposé pour lui."
+
+#~ msgid "Show after post"
+#~ msgstr "Après l'article"
+
+#~ msgid ""
+#~ "Show the view and download links below the post content for a customer "
+#~ "file."
+#~ msgstr ""
+#~ "Afficher les liens pour voir ou télécharger un fichier sous le contenu "
+#~ "d'un article représentant un fichier client."
+
+#~ msgid "Include CSS"
+#~ msgstr "Inclure le CSS"
+
+#~ msgid "Include the default stylesheet."
+#~ msgstr "Inclure la feuille de style par défaut"
+
+#~ msgid "If not, you should style the plugin yourself in your theme."
+#~ msgstr ""
+#~ "Si non, vous devrez mettre en forme le plugin par vous-même dans votre "
+#~ "thème."
+
+#~ msgid " is not a valid value"
+#~ msgstr "n'est pas une valeur valide"
+
+#~ msgid "must be greater than %s"
+#~ msgstr "doit être plus grand que %s"
+
+#~ msgid "must be lower than %s"
+#~ msgstr "doit être plus petit que %s"
+
+#~ msgid "Hello"
+#~ msgstr "Bonjour"
+
+#~ msgid "You must login to access your own customer area."
+#~ msgstr "Vous devez être connecté pour accéder à votre espace client"
+
+#~ msgid "Hello %s,"
+#~ msgstr "Bonjour %s,"
+
+#~ msgid "download-file"
+#~ msgstr "télécharger-fichier"
+
+#~ msgid "view-file"
+#~ msgstr "voir-fichier"
+
+#~ msgid "Customer Files"
+#~ msgstr "Fichiers clients"
+
+#~ msgid "Customer File"
+#~ msgstr "Fichier client"
+
+#~ msgid "Edit Customer File"
+#~ msgstr "Editer un fichier client"
+
+#~ msgid "New Customer File"
+#~ msgstr "Nouveau fichier client"
+
+#~ msgid "View Customer File"
+#~ msgstr "Voir le fichier client"
+
+#~ msgid "File Categories"
+#~ msgstr "Catégories de fichier"
+
+#~ msgid "File Category"
+#~ msgstr "Catégorie de fichier"
+
+#~ msgid "All File Categories"
+#~ msgstr "Toutes les catégories de fichier"
+
+#~ msgid "Parent File Category"
+#~ msgstr "Catégorie de fichier parente"
+
+#~ msgid "Parent File Category:"
+#~ msgstr "Catégorie de fichier parente :"
+
+#~ msgid "Edit File Category"
+#~ msgstr "Modifier la catégorie de fichier"
+
+#~ msgid "Update File Category"
+#~ msgstr "Mettre à jour la catégorie de fichier"
+
+#~ msgid "Add New File Category"
+#~ msgstr "Ajouter une catégorie de fichier"
+
+#~ msgid "New File Category"
+#~ msgstr "Nouvelle catégorie de fichier"
+
+#~ msgid "private-file-category"
+#~ msgstr "catégorie-fichier-privé"
+
+#~ msgid "private-file"
+#~ msgstr "fichier-privé"
+
+#~ msgid "unknown"
+#~ msgstr "inconnu"
+
+#~ msgid "Owner"
+#~ msgstr "Propriétaire"
+
+#~ msgid "Nobody"
+#~ msgstr "Personne"
+
+#~ msgid "File"
+#~ msgstr "Fichier"
+
+#~ msgid "Upload a file"
+#~ msgstr "Téléverser un fichier"
+
+#~ msgid "This file type is not allowed. You can only upload: %s"
+#~ msgstr ""
+#~ "Ce type de fichier n'est pas autorisé. Vous pouvez seulement téléverser : "
+#~ "%s"
+
+#~ msgid "An unknown error happened while uploading your file."
+#~ msgstr ""
+#~ "Une erreur inconnue est survenue lors du téléversement de votre fichier."
+
+#~ msgid "An error happened while uploading your file: %s"
+#~ msgstr "Une erreur est survenue lors du téléversement de votre fichier : %s"
+
+#~ msgid "Associated file"
+#~ msgstr "Fichier associé"
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgid "Category"
+#~ msgstr "Catégorie"
+
+#~ msgid "Houston&hellip; we have a problem!"
+#~ msgstr "Houston&hellip; on a un problème !"
+
+#~ msgid ""
+#~ "We have not found what you are looking for. You could simply close this "
+#~ "window out of rage, but you might also want to have a look at the rest of "
+#~ "the website. I am sure you won' be disappointed again. Promise."
+#~ msgstr ""
+#~ "Nous n'avons pas trouvé ce que vous cherchiez. Pour sûr, vous devez être "
+#~ "en pétard, mais vous devriez parcourir le reste du site, vous ne serez "
+#~ "pas déçu de nouveau, promis."
+
+#~ msgid "Browse our blog"
+#~ msgstr "Parcourir le blog"
+
+#~ msgid "By Tag"
+#~ msgstr "Par étiquette"
+
+#~ msgid "Filter our work"
+#~ msgstr "Filtrer les projets"
+
+#~ msgid "Browse our archives"
+#~ msgstr "Parcourez nos archives"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Archives du jour : %s"
+
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Archives du mois : %s"
+
+#~ msgid "F Y"
+#~ msgstr "F Y"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Archives de l'année : %s"
+
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Archives de la catégorie : %s"
+
+#~ msgid "&laquo; Older Comments"
+#~ msgstr "Commentaires plus anciens &laquo;"
+
+#~ msgid "Newer Comments &raquo;"
+#~ msgstr "Commentaires plus récents &raquo;"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires ne sont plus possibles."
+
+#~ msgid "Leave a comment"
+#~ msgstr "Laisser un commentaire"
+
+#~ msgid "Learn more about &laquo; %s &raquo;"
+#~ msgstr "En savoir plus sur &laquo; %s &raquo;"
+
+#~ msgid "Filed under: "
+#~ msgstr "Classé dans : "
+
+#~ msgid "<li>&raquo; Tagged: "
+#~ msgstr "<li>&raquo; Etiqueté : "
+
+#~ msgid "Permalink to %s"
+#~ msgstr "Lien permanent vers %s"
+
+#~ msgid "Read more"
+#~ msgstr "En savoir plus"
+
+#~ msgid "Edit this post"
+#~ msgstr "Editer ce post"
+
+#~ msgid "Get in touch"
+#~ msgstr "Contactez-nous"
+
+#~ msgid "+33 6 50 21 23 94"
+#~ msgstr "06 50 21 23 94"
+
+#~ msgid "hello@marvinlabs.com"
+#~ msgstr "bonjour@marvinlabs.com"
+
+#~ msgid "+1 us on Google+"
+#~ msgstr "+1 sur Google+"
+
+#~ msgid "Like us on Facebook"
+#~ msgstr "Aimez-nous sur Facebook"
+
+#~ msgid "Follow us on Twitter"
+#~ msgstr "Suivez-nous sur Twitter"
+
+#~ msgid "Use our code from GitHub"
+#~ msgstr "Utilisez notre code publié sur GitHub"
+
+#~ msgid "We help fellow developers on StackOverflow"
+#~ msgstr "Nous aidons nos collègues développeurs sur StackOverflow"
+
+#~ msgid "Get our free WordPress plugins & themes"
+#~ msgstr "Téléchargez nos plugins et thèmes gratuits pour WordPress"
+
+#~ msgid "Main navigation menu"
+#~ msgstr "Menu de navigation principal"
+
+#~ msgid "Work"
+#~ msgstr "Projet"
+
+#~ msgid "work"
+#~ msgstr "projet"
+
+#~ msgid "Types"
+#~ msgstr "Types"
+
+#~ msgid "work-type"
+#~ msgstr "type-de-projet"
+
+#~ msgid "Skill"
+#~ msgstr "Compétence"
+
+#~ msgid "Skills"
+#~ msgstr "Compétences"
+
+#~ msgid "work-skill"
+#~ msgstr "competence"
+
+#~ msgid "Technology"
+#~ msgstr "Technologie"
+
+#~ msgid "Technologies"
+#~ msgstr "Technologies"
+
+#~ msgid "work-technology"
+#~ msgstr "technologie"
+
+#~ msgid "work-category"
+#~ msgstr "catégorie-projet"
+
+#~ msgid "Single blog post"
+#~ msgstr "Post de blog unique"
+
+#~ msgid "Blog archive page"
+#~ msgstr "Archive du blog"
+
+#~ msgid "Footer, #getintouch"
+#~ msgstr "Footer, #getintouch"
+
+#~ msgid "Footer, #bottom"
+#~ msgstr "Footer, #bottom"
+
+#~ msgid "About this project"
+#~ msgstr "A propos de ce projet"
+
+#~ msgid "Project launched in %s"
+#~ msgstr "Projet lancé en %s"
+
+#~ msgid "View the live website"
+#~ msgstr "Visiter le site en ligne"
+
+#~ msgid "Get the app on Google Play"
+#~ msgstr "Télécharger l'application sur GooglePlay"
+
+#~ msgid "Get the app on Apple's AppStore"
+#~ msgstr "Télécharger l'application sur l'AppStore d'Apple"
+
+#~ msgid "Get the WordPress plugin"
+#~ msgstr "Téléchargez le plugin WordPress"
+
+#~ msgid "Skills: "
+#~ msgstr "Compétences : "
+
+#~ msgid "Technologies: "
+#~ msgstr "Technologies : "
+
+#~ msgid "You like this project and think we can do a good job with yours?"
+#~ msgstr ""
+#~ "Vous aimez ce projet et pensez que nous pourrions faire du bon travail "
+#~ "pour le votre ?"
+
+#~ msgid "Request a quote"
+#~ msgstr "Demandez un devis"
+
+#~ msgid "About this post"
+#~ msgstr "A propos de cet article"
+
+#~ msgid "Posted on: "
+#~ msgstr "Posté le :"
+
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Archives d'étiquette : %s"
+
+#~ msgid "Our projects of type: %s"
+#~ msgstr "Nos projets de type : %s"
+
+#~ msgid "Posts navigation"
+#~ msgstr "Navigation"
+
+#~ msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
+#~ msgstr "<span class=\"meta-nav\">&laquo;</span> Articles plus anciens"
+
+#~ msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
+#~ msgstr "Articles plus récents <span class=\"meta-nav\">&raquo;</span>"
+
+#~ msgid "show details"
+#~ msgstr "afficher les détails"
+
+#~ msgid "See all of our work"
+#~ msgstr "Voir tous nos projets"
+
+#~ msgid ""
+#~ "All content on this website is the property of &laquo;Constant le "
+#~ "jardinier&raquo; and may not be used without permission"
+#~ msgstr ""
+#~ "Tout le contenu sur ce site est la propriété exclusive de &laquo;Constant "
+#~ "le jardinier&raquo; et ne peut être utilisé sans permission"
+
+#~ msgid "&copy; Constant le jardinier"
+#~ msgstr "&copy; Constant le jardinier"
+
+#~ msgid ""
+#~ "Designed and carried out by MarvinLabs, digital creation studio in Basque "
+#~ "country, France (Biarritz, Anglet, Bayonne)"
+#~ msgstr ""
+#~ "Imaginé et réalisé par MarvinLabs, studio de création numérique au pays "
+#~ "basque (Biarritz, Anglet, Bayonne)"
+
+#~ msgid "A website planted with care by MarvinLabs"
+#~ msgstr "Un site délicatement planté par MarvinLabs"
+
+#~ msgid "Paintings by Marilou Laure"
+#~ msgstr "Peintures par Marilou Laure"
+
+#~ msgid "illustrated with taste by Marilou Laure"
+#~ msgstr "illustré avec goût par Marilou Laure"
+
+#~ msgid "Left footer navigation"
+#~ msgstr "Navigation bas gauche"
+
+#~ msgid "Right footer navigation"
+#~ msgstr "Navigation bas droite"
+
+#~ msgid "Service"
+#~ msgstr "Service"
+
+#~ msgid "Footer Widgets 1 (Left)"
+#~ msgstr "Footer Widgets 1 (Left)"
+
+#~ msgid "Footer Widgets 2 (Middle)"
+#~ msgstr "Footer Widgets 2 (Middle)"
+
+#~ msgid "Footer Widgets 3 (Right)"
+#~ msgstr "Footer Widgets 3 (Right)"
+
+#~ msgid "Nothing here"
+#~ msgstr "Rien ici"
+
+#~ msgid "You should not even be on this page!"
+#~ msgstr "Vous ne devriez même pas vous retrouver sur cette page !"
